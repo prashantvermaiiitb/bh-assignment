@@ -1,4 +1,4 @@
-import { PLATFORMS } from "../../../utils/constants";
+import { PLATFORMS } from "../../../../utils/constants";
 
 /**
  * Factory class for getting proper information about the images ingested
@@ -8,6 +8,11 @@ import { PLATFORMS } from "../../../utils/constants";
  * @todo Strings can be moved to constants file and can be referred from there
  */
 class ImageFactory extends Component {
+  /**
+   * Getting Proper instance of the Image based on the resolution or device information
+   * present as an attribute
+   * @param {*} requestParams
+   */
   static getInstance(requestParams) {
     switch (requestParams.device) {
       case PLATFORMS.DESKTOP:
