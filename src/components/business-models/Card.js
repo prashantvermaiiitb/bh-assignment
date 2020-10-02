@@ -29,11 +29,11 @@ class Card extends Core {
     this.isSoldOut = data.isSoldOut;
     this.count = data.count;
     this.popularityIndex = data.popularityIndex;
-    this.usageFlags = {
-      isSportsCard: data.usageFlags.isSportsCard,
-      isOfficeCard: data.usageFlags.isOfficeCard,
-      isSalonCard: data.usageFlags.isSalonCard,
-      isFoodCard: data.usageFlags.isFoodCard,
+    this.categories = {
+      isSportsCard: data.categories.isSportsCard,
+      isOfficeCard: data.categories.isOfficeCard,
+      isSalonCard: data.categories.isSalonCard,
+      isFoodCard: data.categories.isFoodCard,
     };
   }
 }
